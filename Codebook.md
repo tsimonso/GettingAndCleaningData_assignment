@@ -136,88 +136,99 @@ Table 2 : Angular movements
 </tbody>
 </table>
 
-The raw data obtain form the accelerometers and the gyroscopes was used
-to derive a number of time domain variables (prefix ‘t’ to denote time).
-For each of these variables, the mean values and standard deviations of
-the 128 readings of each 2.56 second window sample were then calculated.
-The lists of resulting variables are presented here. The detailed
-process to produce them is described below.
+First, the accelerometer and gyroscope 3-axial raw signals (total linear
+acceleration and angular velocity) were captured at a constant rate of
+50 Hz. Then they were filtered using a median filter and a 3rd order low
+pass Butterworth filter with a corner frequency of 20 Hz to remove
+noise. Similarly, the total acceleration signal was then separated into
+body acceleration signals (LinearAcceleration-XYZ) and gravity
+acceleration signals (Gravity-XYZ) using another low pass Butterworth
+filter with a corner frequency of 0.3 Hz.
 
-First, the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and
-tGyro-XYZ were captured at a constant rate of 50 Hz. Then they were
-filtered using a median filter and a 3rd order low pass Butterworth
-filter with a corner frequency of 20 Hz to remove noise. Similarly, the
-acceleration signal was then separated into body and gravity
-acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another
-low pass Butterworth filter with a corner frequency of 0.3 Hz.
-
-*tBodyAcc-XYZ variables*
-
-    character(0)
-
-*tGravityAcc-XYZ variables*
-
-    character(0)
-
-Subsequently, the body linear acceleration and angular velocity were
-derived in time to obtain Jerk signals:
-
-*tBodyAccJerk-XYZ variables*
-
-    character(0)
-
-*tBodyGyroJerk-XYZ variables*
-
-    character(0)
+Subsequently, the body linear acceleration (LinearAcceleration-XYZ) and
+angular velocity (AngularVelocity-XYZ) were derived in time to obtain
+Jerk signals (LinearJerk-XYZ and AngularJerk-XYZ)
 
 Also the magnitude of these three-dimensional signals were calculated
-using the Euclidean norm:
+using the Euclidean norm (GravityMagnitude, LinearAccelerationMagnitude,
+LinearJerkMagnitude, AngularVelocityMagnitude and AngularJerkMagnitude).
 
-*tBodyAccMag variables*
+Fast Fourier Transform (FFT) was applied to some of these signals. The
+variables obtained are named with the ‘Frequency’ suffix.
 
-    character(0)
+For each one of the 10299 observations, the mean and standard deviation
+of all variables was calculated.
 
-*tGravityAccMag variables*
+Finally these means and standard deviations were averaged over all the
+observations, by subject and activity.
 
-    character(0)
+Annex : old and new variable names
+----------------------------------
 
-*tBodyAccJerkMag variables*
-
-    character(0)
-
-*tBodyGyroMag variables*
-
-    character(0)
-
-*tBodyGyroJerkMag variables*
-
-    character(0)
-
-Finally a Fast Fourier Transform (FFT) was applied to some of these
-signals producing:
-
-(Note the ‘f’ to indicate frequency domain signals)
-
-*fBodyAcc-XYZ variables*
-
-    character(0)
-
-*fBodyAccJerk-XYZ variables*
-
-    character(0)
-
-*fBodyGyro-XYZ variables*
-
-    character(0)
-
-*fBodyAccJerkMag variables*
-
-    character(0)
-
-*fBodyGyroMag variables*
-
-    character(0)
-
-*fBodyGyroJerkMag variables*
-
-    character(0)
+          originalvarlabels             varlabels                                 
+     [1,] "tBodyAcc-mean()-X"           "LinearAccelerationXmean"                 
+     [2,] "tBodyAcc-mean()-Y"           "LinearAccelerationYmean"                 
+     [3,] "tBodyAcc-mean()-Z"           "LinearAccelerationZmean"                 
+     [4,] "tBodyAcc-std()-X"            "LinearAccelerationXstd"                  
+     [5,] "tBodyAcc-std()-Y"            "LinearAccelerationYstd"                  
+     [6,] "tBodyAcc-std()-Z"            "LinearAccelerationZstd"                  
+     [7,] "tGravityAcc-mean()-X"        "GravityXmean"                            
+     [8,] "tGravityAcc-mean()-Y"        "GravityYmean"                            
+     [9,] "tGravityAcc-mean()-Z"        "GravityZmean"                            
+    [10,] "tGravityAcc-std()-X"         "GravityXstd"                             
+    [11,] "tGravityAcc-std()-Y"         "GravityYstd"                             
+    [12,] "tGravityAcc-std()-Z"         "GravityZstd"                             
+    [13,] "tBodyAccJerk-mean()-X"       "LinearJerkXmean"                         
+    [14,] "tBodyAccJerk-mean()-Y"       "LinearJerkYmean"                         
+    [15,] "tBodyAccJerk-mean()-Z"       "LinearJerkZmean"                         
+    [16,] "tBodyAccJerk-std()-X"        "LinearJerkXstd"                          
+    [17,] "tBodyAccJerk-std()-Y"        "LinearJerkYstd"                          
+    [18,] "tBodyAccJerk-std()-Z"        "LinearJerkZstd"                          
+    [19,] "tBodyGyro-mean()-X"          "AngularVelocityXmean"                    
+    [20,] "tBodyGyro-mean()-Y"          "AngularVelocityYmean"                    
+    [21,] "tBodyGyro-mean()-Z"          "AngularVelocityZmean"                    
+    [22,] "tBodyGyro-std()-X"           "AngularVelocityXstd"                     
+    [23,] "tBodyGyro-std()-Y"           "AngularVelocityYstd"                     
+    [24,] "tBodyGyro-std()-Z"           "AngularVelocityZstd"                     
+    [25,] "tBodyGyroJerk-mean()-X"      "AngularJerkXmean"                        
+    [26,] "tBodyGyroJerk-mean()-Y"      "AngularJerkYmean"                        
+    [27,] "tBodyGyroJerk-mean()-Z"      "AngularJerkZmean"                        
+    [28,] "tBodyGyroJerk-std()-X"       "AngularJerkXstd"                         
+    [29,] "tBodyGyroJerk-std()-Y"       "AngularJerkYstd"                         
+    [30,] "tBodyGyroJerk-std()-Z"       "AngularJerkZstd"                         
+    [31,] "tBodyAccMag-mean()"          "LinearAccelerationMagnitudemean"         
+    [32,] "tBodyAccMag-std()"           "LinearAccelerationMagnitudestd"          
+    [33,] "tGravityAccMag-mean()"       "GravityMagnitudemean"                    
+    [34,] "tGravityAccMag-std()"        "GravityMagnitudestd"                     
+    [35,] "tBodyAccJerkMag-mean()"      "LinearJerkMagnitudemean"                 
+    [36,] "tBodyAccJerkMag-std()"       "LinearJerkMagnitudestd"                  
+    [37,] "tBodyGyroMag-mean()"         "AngularVelocityMagnitudemean"            
+    [38,] "tBodyGyroMag-std()"          "AngularVelocityMagnitudestd"             
+    [39,] "tBodyGyroJerkMag-mean()"     "AngularJerkMagnitudemean"                
+    [40,] "tBodyGyroJerkMag-std()"      "AngularJerkMagnitudestd"                 
+    [41,] "fBodyAcc-mean()-X"           "LinearAccelerationXFrequencymean"        
+    [42,] "fBodyAcc-mean()-Y"           "LinearAccelerationYFrequencymean"        
+    [43,] "fBodyAcc-mean()-Z"           "LinearAccelerationZFrequencymean"        
+    [44,] "fBodyAcc-std()-X"            "LinearAccelerationXFrequencystd"         
+    [45,] "fBodyAcc-std()-Y"            "LinearAccelerationYFrequencystd"         
+    [46,] "fBodyAcc-std()-Z"            "LinearAccelerationZFrequencystd"         
+    [47,] "fBodyAccJerk-mean()-X"       "LinearJerkXFrequencymean"                
+    [48,] "fBodyAccJerk-mean()-Y"       "LinearJerkYFrequencymean"                
+    [49,] "fBodyAccJerk-mean()-Z"       "LinearJerkZFrequencymean"                
+    [50,] "fBodyAccJerk-std()-X"        "LinearJerkXFrequencystd"                 
+    [51,] "fBodyAccJerk-std()-Y"        "LinearJerkYFrequencystd"                 
+    [52,] "fBodyAccJerk-std()-Z"        "LinearJerkZFrequencystd"                 
+    [53,] "fBodyGyro-mean()-X"          "AngularVelocityXFrequencymean"           
+    [54,] "fBodyGyro-mean()-Y"          "AngularVelocityYFrequencymean"           
+    [55,] "fBodyGyro-mean()-Z"          "AngularVelocityZFrequencymean"           
+    [56,] "fBodyGyro-std()-X"           "AngularVelocityXFrequencystd"            
+    [57,] "fBodyGyro-std()-Y"           "AngularVelocityYFrequencystd"            
+    [58,] "fBodyGyro-std()-Z"           "AngularVelocityZFrequencystd"            
+    [59,] "fBodyAccMag-mean()"          "LinearAccelerationMagnitudeFrequencymean"
+    [60,] "fBodyAccMag-std()"           "LinearAccelerationMagnitudeFrequencystd" 
+    [61,] "fBodyBodyAccJerkMag-mean()"  "LinearJerkMagnitudeFrequencymean"        
+    [62,] "fBodyBodyAccJerkMag-std()"   "LinearJerkMagnitudeFrequencystd"         
+    [63,] "fBodyBodyGyroMag-mean()"     "AngularVelocityMagnitudeFrequencymean"   
+    [64,] "fBodyBodyGyroMag-std()"      "AngularVelocityMagnitudeFrequencystd"    
+    [65,] "fBodyBodyGyroJerkMag-mean()" "AngularJerkMagnitudeFrequencymean"       
+    [66,] "fBodyBodyGyroJerkMag-std()"  "AngularJerkMagnitudeFrequencystd"
