@@ -115,115 +115,26 @@ Table 2 : Angular movements
 <tbody>
 <tr class="odd">
 <td>X-AXIS</td>
-<td style="text-align: center;">AngularAccelerationX<br>AngularAccelerationXFrequency</td>
+<td style="text-align: center;">AngularVelocityX<br>AngularVelocityXFrequency</td>
 <td style="text-align: center;">AngularJerkX</td>
 </tr>
 <tr class="even">
 <td>Y-AXIS</td>
-<td style="text-align: center;">AngularAccelerationY<br>AngularAccelerationYFrequency</td>
+<td style="text-align: center;">AngularVelocityY<br>AngularVelocityYFrequency</td>
 <td style="text-align: center;">AngularJerkY</td>
 </tr>
 <tr class="odd">
 <td>Z-AXIS</td>
-<td style="text-align: center;">AngularAccelerationZ<br>AngularAccelerationZFrequency</td>
+<td style="text-align: center;">AngularVelocityZ<br>AngularVelocityZFrequency</td>
 <td style="text-align: center;">AngularJerkZ</td>
 </tr>
 <tr class="even">
 <td>MAGNITUDE</td>
-<td style="text-align: center;">AngularAccelerationMagnitude<br>AngularAccelerationMagnitudeFrequency</td>
+<td style="text-align: center;">AngularVelocityMagnitude<br>AngularVelocityMagnitudeFrequency</td>
 <td style="text-align: center;">AngularJerkMagnitude<br>AngularJerkMagnitudeFrequency</td>
 </tr>
 </tbody>
 </table>
-
-<!--html_preserve-->
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-y698{background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-<tr>
-<th class="tg-0pky">
-</th>
-<th class="tg-7btt">
-Gravity<br>
-</th>
-<th class="tg-7btt">
-Body Linear Acceleration
-</th>
-<th class="tg-7btt">
-Body Linear Jerk
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tg-fymr">
-X-axis
-</td>
-<td class="tg-y698">
-GravityX
-</td>
-<td class="tg-y698">
-LinearAccelerationX<br>LinearAccelerationXFrequency
-</td>
-<td class="tg-y698">
-LinearJerkX<br>LinearJerkXFrequency
-</td>
-</tr>
-<tr>
-<td class="tg-fymr">
-Y-axis
-</td>
-<td class="tg-y698">
-GravityY
-</td>
-<td class="tg-y698">
-LinearAccelerationY<br>LinearAccelerationYFrequency
-</td>
-<td class="tg-y698">
-LinearJerkY<br>LinearJerkYFrequency
-</td>
-</tr>
-<tr>
-<td class="tg-fymr">
-Z-axis
-</td>
-<td class="tg-y698">
-GravityZ
-</td>
-<td class="tg-y698">
-LinearAccelerationZ<br>LinearAccelerationZFrequency
-</td>
-<td class="tg-y698">
-LinearJerkZ<br>LinearJerkZFrequency
-</td>
-</tr>
-<tr>
-<td class="tg-fymr">
-Magnitude
-</td>
-<td class="tg-y698">
-GravityMagnitude
-</td>
-<td class="tg-y698">
-LinearAccelerationMagnitude<br>LinearAccelerationMagnitudeFrequency
-</td>
-<td class="tg-y698">
-LinearJerkMagnitude<br>LinearJerkMagnitudeFrequency
-</td>
-</tr>
-</tbody>
-</table>
-<!--/html_preserve-->
 
 The raw data obtain form the accelerometers and the gyroscopes was used
 to derive a number of time domain variables (prefix ‘t’ to denote time).
@@ -242,49 +153,45 @@ low pass Butterworth filter with a corner frequency of 0.3 Hz.
 
 *tBodyAcc-XYZ variables*
 
-    [1] "tbodyaccmeanx" "tbodyaccmeany" "tbodyaccmeanz" "tbodyaccstdx" 
-    [5] "tbodyaccstdy"  "tbodyaccstdz" 
+    character(0)
 
 *tGravityAcc-XYZ variables*
 
-    [1] "tgravityaccmeanx" "tgravityaccmeany" "tgravityaccmeanz" "tgravityaccstdx" 
-    [5] "tgravityaccstdy"  "tgravityaccstdz" 
+    character(0)
 
 Subsequently, the body linear acceleration and angular velocity were
 derived in time to obtain Jerk signals:
 
 *tBodyAccJerk-XYZ variables*
 
-    [1] "tbodyaccjerkmeanx" "tbodyaccjerkmeany" "tbodyaccjerkmeanz"
-    [4] "tbodyaccjerkstdx"  "tbodyaccjerkstdy"  "tbodyaccjerkstdz" 
+    character(0)
 
 *tBodyGyroJerk-XYZ variables*
 
-    [1] "tbodygyrojerkmeanx" "tbodygyrojerkmeany" "tbodygyrojerkmeanz"
-    [4] "tbodygyrojerkstdx"  "tbodygyrojerkstdy"  "tbodygyrojerkstdz" 
+    character(0)
 
 Also the magnitude of these three-dimensional signals were calculated
 using the Euclidean norm:
 
 *tBodyAccMag variables*
 
-    [1] "tbodyaccmagmean" "tbodyaccmagstd" 
+    character(0)
 
 *tGravityAccMag variables*
 
-    [1] "tgravityaccmagmean" "tgravityaccmagstd" 
+    character(0)
 
 *tBodyAccJerkMag variables*
 
-    [1] "tbodyaccjerkmagmean" "tbodyaccjerkmagstd" 
+    character(0)
 
 *tBodyGyroMag variables*
 
-    [1] "tbodygyromagmean" "tbodygyromagstd" 
+    character(0)
 
 *tBodyGyroJerkMag variables*
 
-    [1] "tbodygyrojerkmagmean" "tbodygyrojerkmagstd" 
+    character(0)
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these
 signals producing:
@@ -293,27 +200,24 @@ signals producing:
 
 *fBodyAcc-XYZ variables*
 
-    [1] "fbodyaccmeanx" "fbodyaccmeany" "fbodyaccmeanz" "fbodyaccstdx" 
-    [5] "fbodyaccstdy"  "fbodyaccstdz" 
+    character(0)
 
 *fBodyAccJerk-XYZ variables*
 
-    [1] "fbodyaccjerkmeanx" "fbodyaccjerkmeany" "fbodyaccjerkmeanz"
-    [4] "fbodyaccjerkstdx"  "fbodyaccjerkstdy"  "fbodyaccjerkstdz" 
+    character(0)
 
 *fBodyGyro-XYZ variables*
 
-    [1] "fbodygyromeanx" "fbodygyromeany" "fbodygyromeanz" "fbodygyrostdx" 
-    [5] "fbodygyrostdy"  "fbodygyrostdz" 
+    character(0)
 
 *fBodyAccJerkMag variables*
 
-    [1] "fbodyaccjerkmagmean" "fbodyaccjerkmagstd" 
+    character(0)
 
 *fBodyGyroMag variables*
 
-    [1] "fbodygyromagmean" "fbodygyromagstd" 
+    character(0)
 
 *fBodyGyroJerkMag variables*
 
-    [1] "fbodygyrojerkmagmean" "fbodygyrojerkmagstd"
+    character(0)
