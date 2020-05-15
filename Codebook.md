@@ -54,6 +54,49 @@ classification was done by hand on the basis of video recordings.
 
 Linear movements
 
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 11%" />
+<col style="width: 45%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">GRAVITY</th>
+<th style="text-align: center;">BODY LINEAR ACCELERATION</th>
+<th style="text-align: center;">BODY LINEAR JERK</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X-AXIS</td>
+<td style="text-align: center;">GravityX</td>
+<td style="text-align: center;">LinearAccelerationX<br>LinearAccelerationXFrequency</td>
+<td style="text-align: center;">LinearJerkX<br>LinearJerkXFrequency</td>
+</tr>
+<tr class="even">
+<td>Y-AXIS</td>
+<td style="text-align: center;">GravityY</td>
+<td style="text-align: center;">LinearAccelerationY<br>LinearAccelerationYFrequency</td>
+<td style="text-align: center;">LinearJerkY<br>LinearJerkYFrequency</td>
+</tr>
+<tr class="odd">
+<td>Z-AXIS</td>
+<td style="text-align: center;">GravityZ</td>
+<td style="text-align: center;">LinearAccelerationZ<br>LinearAccelerationZFrequency</td>
+<td style="text-align: center;">LinearJerkZ<br>LinearJerkZFrequency</td>
+</tr>
+<tr class="even">
+<td>MAGNITUDE</td>
+<td style="text-align: center;">GravityMagnitude</td>
+<td style="text-align: center;">LinearAccelerationMagnitude<br>LinearAccelerationMagnitudeFrequency</td>
+<td style="text-align: center;">LinearJerkMagnitude<br>LinearJerkMagnitudeFrequency</td>
+</tr>
+</tbody>
+</table>
+
 <!--html_preserve-->
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
