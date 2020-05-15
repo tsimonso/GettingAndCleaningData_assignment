@@ -52,7 +52,7 @@ classification was done by hand on the basis of video recordings.
 
 *Data from the accelerometer and the gyriscope*
 
-Linear movements
+Table 1 : Linear movements
 
 <table>
 <colgroup>
@@ -64,9 +64,9 @@ Linear movements
 <thead>
 <tr class="header">
 <th></th>
-<th style="text-align: center;">GRAVITY</th>
-<th style="text-align: center;">BODY LINEAR ACCELERATION</th>
-<th style="text-align: center;">BODY LINEAR JERK</th>
+<th style="text-align: center;">Gravity</th>
+<th style="text-align: center;">Body Linear Acceleration</th>
+<th style="text-align: center;">Body Linear Jerk</th>
 </tr>
 </thead>
 <tbody>
@@ -93,6 +93,45 @@ Linear movements
 <td style="text-align: center;">GravityMagnitude</td>
 <td style="text-align: center;">LinearAccelerationMagnitude<br>LinearAccelerationMagnitudeFrequency</td>
 <td style="text-align: center;">LinearJerkMagnitude<br>LinearJerkMagnitudeFrequency</td>
+</tr>
+</tbody>
+</table>
+
+Table 2 : Angular movements
+
+<table>
+<colgroup>
+<col style="width: 8%" />
+<col style="width: 51%" />
+<col style="width: 40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Body Angular Velocity</th>
+<th style="text-align: center;">Body Angular Jerk</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>X-AXIS</td>
+<td style="text-align: center;">AngularAccelerationX<br>AngularAccelerationXFrequency</td>
+<td style="text-align: center;">AngularJerkX</td>
+</tr>
+<tr class="even">
+<td>Y-AXIS</td>
+<td style="text-align: center;">AngularAccelerationY<br>AngularAccelerationYFrequency</td>
+<td style="text-align: center;">AngularJerkY</td>
+</tr>
+<tr class="odd">
+<td>Z-AXIS</td>
+<td style="text-align: center;">AngularAccelerationZ<br>AngularAccelerationZFrequency</td>
+<td style="text-align: center;">AngularJerkZ</td>
+</tr>
+<tr class="even">
+<td>MAGNITUDE</td>
+<td style="text-align: center;">AngularAccelerationMagnitude<br>AngularAccelerationMagnitudeFrequency</td>
+<td style="text-align: center;">AngularJerkMagnitude<br>AngularJerkMagnitudeFrequency</td>
 </tr>
 </tbody>
 </table>
