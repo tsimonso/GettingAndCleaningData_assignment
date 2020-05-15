@@ -54,49 +54,6 @@ classification was done by hand on the basis of video recordings.
 
 Linear movements
 
-<table>
-<colgroup>
-<col style="width: 7%" />
-<col style="width: 11%" />
-<col style="width: 45%" />
-<col style="width: 35%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th style="text-align: center;">Gravity</th>
-<th style="text-align: center;">Body Linear Acceleration</th>
-<th style="text-align: center;">Body Linear Jerk</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>X-axis</td>
-<td style="text-align: center;">GravityX</td>
-<td style="text-align: center;">LinearAccelerationX<br>LinearAccelerationXFrequency</td>
-<td style="text-align: center;">LinearJerkX<br>LinearJerkXFrequency</td>
-</tr>
-<tr class="even">
-<td>Y-axis</td>
-<td style="text-align: center;">GravityY</td>
-<td style="text-align: center;">LinearAccelerationY<br>LinearAccelerationYFrequency</td>
-<td style="text-align: center;">LinearJerkY<br>LinearJerkYFrequency</td>
-</tr>
-<tr class="odd">
-<td>Z-axis</td>
-<td style="text-align: center;">GravityZ</td>
-<td style="text-align: center;">LinearAccelerationZ<br>LinearAccelerationZFrequency</td>
-<td style="text-align: center;">LinearJerkZ<br>LinearJerkZFrequency</td>
-</tr>
-<tr class="even">
-<td>Magnitude</td>
-<td style="text-align: center;">GravityMagnitude</td>
-<td style="text-align: center;">LinearAccelerationMagnitude<br>LinearAccelerationMagnitudeFrequency</td>
-<td style="text-align: center;">LinearJerkMagnitude<br>LinearJerkMagnitudeFrequency</td>
-</tr>
-</tbody>
-</table>
-
 <!--html_preserve-->
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -104,147 +61,82 @@ Linear movements
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-y698{background-color:#efefef;border-color:inherit;text-align:left;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
 <tr>
-<th class="tg-amwm">
+<th class="tg-0pky">
 </th>
-<th class="tg-amwm" colspan="3">
-Linear movements (accelerometer)
+<th class="tg-7btt">
+Gravity<br>
 </th>
-<th class="tg-amwm" colspan="3">
-Angular movements (gyroscope)
+<th class="tg-7btt">
+Body Linear Acceleration
+</th>
+<th class="tg-7btt">
+Body Linear Jerk
 </th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tg-7btt">
-</td>
-<td class="tg-7btt">
-Gravity
-</td>
-<td class="tg-7btt" colspan="2">
-Body
-</td>
-<td class="tg-7btt" colspan="3">
-Body
-</td>
-</tr>
-<tr>
-<td class="tg-0pky">
-</td>
-<td class="tg-7btt">
-Acceleration<br>
-</td>
-<td class="tg-7btt">
-Acceleration
-</td>
-<td class="tg-7btt">
-Jerk
-</td>
-<td class="tg-7btt">
-Velocity
-</td>
-<td class="tg-amwm">
-Acceleration
-</td>
-<td class="tg-amwm">
-Jerk
-</td>
-</tr>
-<tr>
-<td class="tg-1wig">
+<td class="tg-fymr">
 X-axis
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 GravityX
 </td>
-<td class="tg-0lax">
-BodyAccelerationX<br>BodyAccelerationXFrequency
+<td class="tg-y698">
+LinearAccelerationX<br>LinearAccelerationXFrequency
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 LinearJerkX<br>LinearJerkXFrequency
 </td>
-<td class="tg-0lax">
-AngularVelocityX<br>AngularVelocityXFrequency
-</td>
-<td class="tg-0lax">
-</td>
-<td class="tg-0lax">
-AngularJerkX
-</td>
 </tr>
 <tr>
-<td class="tg-1wig">
+<td class="tg-fymr">
 Y-axis
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 GravityY
 </td>
-<td class="tg-0lax">
-BodyAccelerationY<br>BodyAccelerationYFrequency
+<td class="tg-y698">
+LinearAccelerationY<br>LinearAccelerationYFrequency
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 LinearJerkY<br>LinearJerkYFrequency
 </td>
-<td class="tg-0lax">
-AngularVelocityY<br>AngularVelocityYFrequency
-</td>
-<td class="tg-0lax">
-</td>
-<td class="tg-0lax">
-AngularJerkY
-</td>
 </tr>
 <tr>
-<td class="tg-1wig">
+<td class="tg-fymr">
 Z-axis
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 GravityZ
 </td>
-<td class="tg-0lax">
-BodyAccelerationZ<br>BodyAccelerationZFrequency
+<td class="tg-y698">
+LinearAccelerationZ<br>LinearAccelerationZFrequency
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 LinearJerkZ<br>LinearJerkZFrequency
-</td>
-<td class="tg-0lax">
-AngularVelocityZ<br>AngularVelocityZFrequency
-</td>
-<td class="tg-0lax">
-</td>
-<td class="tg-0lax">
-AngularJerkZ
 </td>
 </tr>
 <tr>
-<td class="tg-1wig">
+<td class="tg-fymr">
 Magnitude
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 GravityMagnitude
 </td>
-<td class="tg-0lax">
-BodyAccelerationMagnitude<br>BodyAccelerationMagnitudeFrequency
+<td class="tg-y698">
+LinearAccelerationMagnitude<br>LinearAccelerationMagnitudeFrequency
 </td>
-<td class="tg-0lax">
+<td class="tg-y698">
 LinearJerkMagnitude<br>LinearJerkMagnitudeFrequency
-</td>
-<td class="tg-0lax">
-AngularVelocityMagnitude<br>AngularVelocityMagnitudeFrequency
-</td>
-<td class="tg-0lax">
-</td>
-<td class="tg-0lax">
-AngularJerkMagnitude<br>AngularJerkMagnitudeFrequency
 </td>
 </tr>
 </tbody>
