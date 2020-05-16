@@ -1,5 +1,5 @@
 Human Activity Recognition Using Smartphones Dataset
-----------------------------------------------------
+====================================================
 
 Getting and Cleaning Data - Week 4 Assignment
 ---------------------------------------------
@@ -52,14 +52,18 @@ variables from the time and frequency domain.
 
 #### The 20 calculated variables from the time domain:
 
--   The time domain variables were derived to obtain jerk signals \*
-    body linear acceleration (tBodyAcc-XYZ) –&gt; body linear jerk
-    (tBodyAccJerk-XYZ) \* angular velocity (tBodyGyro-XYZ) –&gt; angular
-    jerk (tBodyGyroJerk-XYZ)
-
+-   The time domain variables were derived to obtain jerk signals
+    -   body linear acceleration (tBodyAcc-XYZ) –&gt; body linear jerk
+        (tBodyAccJerk-XYZ)
+    -   angular velocity (tBodyGyro-XYZ) –&gt; angular jerk
+        (tBodyGyroJerk-XYZ)
 -   The magnitude of these three-dimensional signals were calculated
-    using the Euclidean norm \* tBodyAccMag \* tGravityAccMag \*
-    tBodyAccJerkMag \* tBodyGyroMag \* tBodyGyroJerkMag
+    using the Euclidean norm
+    -   tBodyAccMag
+    -   tGravityAccMag
+    -   tBodyAccJerkMag
+    -   tBodyGyroMag
+    -   tBodyGyroJerkMag
 
 #### The 13 calculated variables from the frequency domain:
 
