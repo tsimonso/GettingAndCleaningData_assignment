@@ -1,53 +1,3 @@
-    knitr::opts_chunk$set(echo = FALSE, comment=NA)
-    load("GettingAndCleaningData_assignment_myWorkSpace.RData")
-    source("./reading_tidydata_txt.R")
-
-    ## Loading required package: reader
-
-    ## Loading required package: NCmisc
-
-    ## 
-    ## Attaching package: 'reader'
-
-    ## The following objects are masked from 'package:NCmisc':
-    ## 
-    ##     cat.path, get.ext, rmv.ext
-
-    ## Loading required package: dplyr
-
-    ## 
-    ## Attaching package: 'dplyr'
-
-    ## The following objects are masked from 'package:stats':
-    ## 
-    ##     filter, lag
-
-    ## The following objects are masked from 'package:base':
-    ## 
-    ##     intersect, setdiff, setequal, union
-
-    ## Loading required package: readr
-
-    ## Loading required package: data.table
-
-    ## 
-    ## Attaching package: 'data.table'
-
-    ## The following objects are masked from 'package:dplyr':
-    ## 
-    ##     between, first, last
-
-    ##  reading file with unspecified whitespace demiliting, check result imported correctly
-    ##  header ignored!
-
-    requiredPackages = c("downloader","readr","dplyr")
-    for(p in requiredPackages){
-            if(!require(p,character.only = TRUE)) install.packages(p)
-            library(p,character.only = TRUE)
-    }
-
-    ## Loading required package: downloader
-
 ### Human Activity Recognition Using Smartphones Data Set
 
 #### Data
@@ -212,12 +162,6 @@ Table 2 : Angular movements
 
 Annex : old and new variable names
 ----------------------------------
-
-    Parsed with column specification:
-    cols(
-      `Old variable name` = col_character(),
-      `New variable name` = col_character()
-    )
 
     Warning: 66 parsing failures.
     row               col expected actual                         file
