@@ -229,17 +229,70 @@ Annex : old and new variable names
     ... ................. ........ ...... ............................
     See problems(...) for more details.
 
-    # A tibble: 66 x 2
-       `Old variable name`  `New variable name`    
-       <chr>                <chr>                  
-     1 tBodyAcc-mean()-X    LinearAccelerationXmean
-     2 tBodyAcc-mean()-Y    LinearAccelerationYmean
-     3 tBodyAcc-mean()-Z    LinearAccelerationZmean
-     4 tBodyAcc-std()-X     LinearAccelerationXstd 
-     5 tBodyAcc-std()-Y     LinearAccelerationYstd 
-     6 tBodyAcc-std()-Z     LinearAccelerationZstd 
-     7 tGravityAcc-mean()-X GravityXmean           
-     8 tGravityAcc-mean()-Y GravityYmean           
-     9 tGravityAcc-mean()-Z GravityZmean           
-    10 tGravityAcc-std()-X  GravityXstd            
-    # ... with 56 more rows
+                 Old variable name                        New variable name
+    1            tBodyAcc-mean()-X                  LinearAccelerationXmean
+    2            tBodyAcc-mean()-Y                  LinearAccelerationYmean
+    3            tBodyAcc-mean()-Z                  LinearAccelerationZmean
+    4             tBodyAcc-std()-X                   LinearAccelerationXstd
+    5             tBodyAcc-std()-Y                   LinearAccelerationYstd
+    6             tBodyAcc-std()-Z                   LinearAccelerationZstd
+    7         tGravityAcc-mean()-X                             GravityXmean
+    8         tGravityAcc-mean()-Y                             GravityYmean
+    9         tGravityAcc-mean()-Z                             GravityZmean
+    10         tGravityAcc-std()-X                              GravityXstd
+    11         tGravityAcc-std()-Y                              GravityYstd
+    12         tGravityAcc-std()-Z                              GravityZstd
+    13       tBodyAccJerk-mean()-X                          LinearJerkXmean
+    14       tBodyAccJerk-mean()-Y                          LinearJerkYmean
+    15       tBodyAccJerk-mean()-Z                          LinearJerkZmean
+    16        tBodyAccJerk-std()-X                           LinearJerkXstd
+    17        tBodyAccJerk-std()-Y                           LinearJerkYstd
+    18        tBodyAccJerk-std()-Z                           LinearJerkZstd
+    19          tBodyGyro-mean()-X                     AngularVelocityXmean
+    20          tBodyGyro-mean()-Y                     AngularVelocityYmean
+    21          tBodyGyro-mean()-Z                     AngularVelocityZmean
+    22           tBodyGyro-std()-X                      AngularVelocityXstd
+    23           tBodyGyro-std()-Y                      AngularVelocityYstd
+    24           tBodyGyro-std()-Z                      AngularVelocityZstd
+    25      tBodyGyroJerk-mean()-X                         AngularJerkXmean
+    26      tBodyGyroJerk-mean()-Y                         AngularJerkYmean
+    27      tBodyGyroJerk-mean()-Z                         AngularJerkZmean
+    28       tBodyGyroJerk-std()-X                          AngularJerkXstd
+    29       tBodyGyroJerk-std()-Y                          AngularJerkYstd
+    30       tBodyGyroJerk-std()-Z                          AngularJerkZstd
+    31          tBodyAccMag-mean()          LinearAccelerationMagnitudemean
+    32           tBodyAccMag-std()           LinearAccelerationMagnitudestd
+    33       tGravityAccMag-mean()                     GravityMagnitudemean
+    34        tGravityAccMag-std()                      GravityMagnitudestd
+    35      tBodyAccJerkMag-mean()                  LinearJerkMagnitudemean
+    36       tBodyAccJerkMag-std()                   LinearJerkMagnitudestd
+    37         tBodyGyroMag-mean()             AngularVelocityMagnitudemean
+    38          tBodyGyroMag-std()              AngularVelocityMagnitudestd
+    39     tBodyGyroJerkMag-mean()                 AngularJerkMagnitudemean
+    40      tBodyGyroJerkMag-std()                  AngularJerkMagnitudestd
+    41           fBodyAcc-mean()-X         LinearAccelerationXFrequencymean
+    42           fBodyAcc-mean()-Y         LinearAccelerationYFrequencymean
+    43           fBodyAcc-mean()-Z         LinearAccelerationZFrequencymean
+    44            fBodyAcc-std()-X          LinearAccelerationXFrequencystd
+    45            fBodyAcc-std()-Y          LinearAccelerationYFrequencystd
+    46            fBodyAcc-std()-Z          LinearAccelerationZFrequencystd
+    47       fBodyAccJerk-mean()-X                 LinearJerkXFrequencymean
+    48       fBodyAccJerk-mean()-Y                 LinearJerkYFrequencymean
+    49       fBodyAccJerk-mean()-Z                 LinearJerkZFrequencymean
+    50        fBodyAccJerk-std()-X                  LinearJerkXFrequencystd
+    51        fBodyAccJerk-std()-Y                  LinearJerkYFrequencystd
+    52        fBodyAccJerk-std()-Z                  LinearJerkZFrequencystd
+    53          fBodyGyro-mean()-X            AngularVelocityXFrequencymean
+    54          fBodyGyro-mean()-Y            AngularVelocityYFrequencymean
+    55          fBodyGyro-mean()-Z            AngularVelocityZFrequencymean
+    56           fBodyGyro-std()-X             AngularVelocityXFrequencystd
+    57           fBodyGyro-std()-Y             AngularVelocityYFrequencystd
+    58           fBodyGyro-std()-Z             AngularVelocityZFrequencystd
+    59          fBodyAccMag-mean() LinearAccelerationMagnitudeFrequencymean
+    60           fBodyAccMag-std()  LinearAccelerationMagnitudeFrequencystd
+    61  fBodyBodyAccJerkMag-mean()         LinearJerkMagnitudeFrequencymean
+    62   fBodyBodyAccJerkMag-std()          LinearJerkMagnitudeFrequencystd
+    63     fBodyBodyGyroMag-mean()    AngularVelocityMagnitudeFrequencymean
+    64      fBodyBodyGyroMag-std()     AngularVelocityMagnitudeFrequencystd
+    65 fBodyBodyGyroJerkMag-mean()        AngularJerkMagnitudeFrequencymean
+    66  fBodyBodyGyroJerkMag-std()         AngularJerkMagnitudeFrequencystd
