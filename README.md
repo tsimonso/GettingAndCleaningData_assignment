@@ -134,8 +134,8 @@ different subject-activity combination.
 
     [1] -0.9976661  0.9745087
 
-For each record the following is provided: - Its activity label. - An
-identifier of the subject who carried out the experiment. - the average
+For each record the following is provided: \* Its activity label. \* An
+identifier of the subject who carried out the experiment. \* the average
 value (by subject and type of activity) of means and standard deviations
 of the following variables: - Triaxial body acceleration. - Jerk signals
 for body linear acceleration and angular velocity - Magnitude of the
@@ -147,12 +147,13 @@ The dataset includes the following files:
 Scripts produced for this assignment:
 -------------------------------------
 
--   ‘run\_analysis.R’ : script that perform the following tasks: 1)
-    merges the training and the test sets to create one data set 2)
-    extracts the mean and standard deviation for each measurement. 3)
-    labels the variables and the values of the categorical variables. 4)
-    creates a second, independent data set with the average of each
-    variable for each activity and each subject.
+-   ‘run\_analysis.R’ : script that perform the following tasks:
+    1.  merges the training and the test sets to create one data set
+    2.  extracts the mean and standard deviation for each measurement.
+    3.  labels the variables and the values of the categorical
+        variables.
+    4.  creates a second, independent data set with the average of each
+        variable for each activity and each subject.
 -   ‘reading\_tidydata\_txt.R’ : script to load easily ‘tidydata.txt’ in
     R (called by ‘README.Rmd’ and ‘Codebook.Rmd’)
 -   ‘README.Rmd’ : script used to produce this ‘README.md’ document.
