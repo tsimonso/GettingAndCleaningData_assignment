@@ -41,7 +41,8 @@ total linear acceleration along the x-axis:*
 
 *The values are in their original units. The linear accelerations are in
 ‘g’s and the angular velocities in ’rad/sec’.* *Here is, for example,
-the range of the values for the gyroscopes around the x-axis:*
+the range of the values for the gyroscopes around the x-axis (datasets
+‘body\_gyro\_x\_train’ and ‘body\_gyro\_x\_test’):*
 
     [1] -4.733656  4.155473
 
@@ -67,10 +68,15 @@ variables from the time and frequency domain.
 
 #### The 13 calculated variables from the frequency domain:
 
-Finally a Fast Fourier Transform (FFT) was applied to some of these
-signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ,
-fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the ‘f’ to
-indicate frequency domain signals).
+-   A Fast Fourier Transform (FFT) was applied to some of these signals
+    producing the following variables (Note the ‘f’ to indicate
+    frequency domain signals):
+    -   fBodyAcc-XYZ
+    -   fBodyAccJerk-XYZ
+    -   fBodyGyro-XYZ
+    -   fBodyAccJerkMag
+    -   fBodyGyroMag
+    -   fBodyGyroJerkMag
 
 #### The set of variables (17 in total) that were estimated from these signals
 
@@ -98,7 +104,8 @@ indicate frequency domain signals).
 The complete list of variables of each feature vector (33 x 17 = 561 in
 total) is available in ‘features.txt’
 
-*Here are the dimensions of the joint dataset (train + test)*
+*Here are the dimensions of the joint dataset (‘X\_test’ and
+‘X\_train’)*
 
     [1] 10299   561
 
@@ -106,7 +113,7 @@ total) is available in ‘features.txt’
 
     [1] -1  1
 
-### The dataset put together for this assignment
+### The dataset assembled for this assignment
 
 For this assignment, only 66 of the 561 variables have been used : the
 means and standard deviations of the 33 signals. The datasets ‘X\_test’
