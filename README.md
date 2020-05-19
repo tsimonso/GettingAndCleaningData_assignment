@@ -134,12 +134,16 @@ different subject-activity combination.
 
     [1] -0.9976661  0.9745087
 
-For each record the following is provided: \* Its activity label. \* An
-identifier of the subject who carried out the experiment. \* the average
-value (by subject and type of activity) of means and standard deviations
-of the following variables: - Triaxial body acceleration. - Jerk signals
-for body linear acceleration and angular velocity - Magnitude of the
-triaxial signals - Fast Fourier Transform of these signals.
+For each record the following is provided:
+
+-   Its activity label.
+-   An identifier of the subject who carried out the experiment.
+-   the average value (by subject and type of activity) of means and
+    standard deviations of the following variables:
+    -   Triaxial body acceleration.
+    -   Jerk signals for body linear acceleration and angular velocity
+    -   Magnitude of the triaxial signals
+    -   Fast Fourier Transform of these signals.
 
 The dataset includes the following files:
 =========================================
@@ -159,10 +163,12 @@ Scripts produced for this assignment:
 -   ‘README.Rmd’ : script used to produce this ‘README.md’ document.
 -   ‘Codebook.Rmd’ : script used to produce the ‘Codebook.md’ document.
 
-To allow the scripts to run properly, proceed as described below: 1)
-Download the zip file with the original datasets and the four scripts to
-the working directory 2) Run ‘run\_analysis.R’ 3) Knit the markdown
-documents, running ‘README.Rmd’ and ‘Codebook.Rmd’
+To allow the scripts to run properly, proceed as described below:
+
+1.  Download the zip file with the original datasets and the four
+    scripts to the working directory
+2.  Run ‘run\_analysis.R’
+3.  Knit the markdown documents, running ‘README.Rmd’ and ‘Codebook.Rmd’
 
 Files produced or updated for this assignment:
 ----------------------------------------------
