@@ -42,8 +42,9 @@ from
 
 #### How to load the data from the text file ‘tidydata.txt’?
 
-To load the data from the text file ‘tidydata.txt’ into R studio, simply
-run the R script file ‘reading\_tidydata\_txt.R’
+To load the data from the text file ‘tidydata.txt’ into R studio, copy
+it to your working directory with the R script file
+‘reading\_tidydata\_txt.R’, and run the script.
 
 #### Variables
 
@@ -75,6 +76,27 @@ classification was done by hand on the basis of video recordings.
     6    6             LAYING
 
 *Data on body motions*
+
+All the variables related to body motions can be found in the two tables
+below. The variables regarding linear movements are presented in the
+first table, and the variables regarding angular movements are presented
+in the second table. There are no units, all variables being normalized
+and bounded within \[-1,1\].
+
+Linear movements detected by the accelerometer can be described in terms
+of acceleration and jerks. A jerk or jolt is the rate at which an
+object’s acceleration changes with respect to time. The components of
+those vectors along the X, Y and Z axis are given, as well as the
+magnitude of the vectors.
+
+For all the variables describing body linear movements, fast Fourier
+transforms are provided. They describe vibrations along the three axes.
+The corresponding variables contain the suffix ‘Frequency’.
+
+The component of total linear acceleration that is attributed to gravity
+is described by the variables starting with the prefix ‘Gravity’.
+Gravity can be described with fewer variables, because there are no
+associated jerks or vibrations.
 
 Table 1 : Linear movements
 
@@ -121,6 +143,12 @@ Table 1 : Linear movements
 </tbody>
 </table>
 
+Angular movements detected by the gyroscope are described in terms of
+angular velocity and angular jerk. The components of those vectors along
+the X,Y and Z axes are provided, as well as the magnitude of those
+vectors. Fast Fourier transforms are provided for all variables, except
+the XYZ components of the angular jerks.
+
 Table 2 : Angular movements
 
 <table>
@@ -162,6 +190,9 @@ Table 2 : Angular movements
 
 Annex : old and new variable names
 ----------------------------------
+
+The table below shows the correspondance between the original variable
+names and the descriptive variable names chosen for this dataset.
 
                  Old variable name                        New variable name
     1            tBodyAcc-mean()-X                  LinearAccelerationXmean
