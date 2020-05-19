@@ -1,8 +1,8 @@
 Human Activity Recognition Using Smartphones Dataset
 ====================================================
 
-Getting and Cleaning Data - Week 4 Assignment
----------------------------------------------
+Getting and Cleaning Data - Course project
+------------------------------------------
 
 ### The experimental design
 
@@ -134,36 +134,47 @@ different subject-activity combination.
 
     [1] -0.9976661  0.9745087
 
-For each record it is provided
-==============================
-
--   Its activity label.
--   An identifier of the subject who carried out the experiment.
--   the mean and standard deviation of the following variables: -
-    Triaxial body acceleration. - Jerk signals for body linear
-    acceleration and angular velocity - Magnitude of the triaxial
-    signals - Fast Fourier Transform of these signals.
+For each record the following is provided: - Its activity label. - An
+identifier of the subject who carried out the experiment. - the average
+value (by subject and type of activity) of means and standard deviations
+of the following variables: - Triaxial body acceleration. - Jerk signals
+for body linear acceleration and angular velocity - Magnitude of the
+triaxial signals - Fast Fourier Transform of these signals.
 
 The dataset includes the following files:
 =========================================
 
-Files produced or updated for this assignment:
-----------------------------------------------
+Scripts produced for this assignment:
+-------------------------------------
 
--   ‘README.md’
--   ‘CodeBook.md’ : with information about all the variables and
-    summaries calculated, along with units.
 -   ‘run\_analysis.R’ : script that perform the following tasks: 1)
     merges the training and the test sets to create one data set 2)
     extracts the mean and standard deviation for each measurement. 3)
     labels the variables and the values of the categorical variables. 4)
     creates a second, independent data set with the average of each
     variable for each activity and each subject.
--   ‘tidydata.csv’ : with 10299 observations, each representing a 2.56
-    sample window of one of the 6 activities performed by one of the 30
-    subject.
--   ‘tidymeans.csv’ : with 180 rows, each representing one of the 6
-    activities by one of the 30 subjects.
+-   ‘reading\_tidydata\_txt.R’ : script to load easily ‘tidydata.txt’ in
+    R (called by ‘README.Rmd’ and ‘Codebook.Rmd’)
+-   ‘README.Rmd’ : script used to produce this ‘README.md’ document.
+-   ‘Codebook.Rmd’ : script used to produce the ‘Codebook.md’ document.
+
+To allow the scripts to run properly, proceed as described below: 1)
+Download the zip file with the original datasets and the four scripts to
+the working directory 2) Run ‘run\_analysis.R’ 3) Knit the markdown
+documents, running ‘README.Rmd’ and ‘Codebook.Rmd’
+
+Files produced or updated for this assignment:
+----------------------------------------------
+
+-   ‘README.md’
+-   ‘Codebook.md’ : with information about all the variables and
+    summaries calculated, along with units.
+-   ‘tidydata.txt’ : Produced by the script ‘run\_analysis.R’. Contains
+    180 rows, each representing one of the 6 activities by one of the 30
+    subjects.
+-   ‘beforeAfterVarlabels.txt’ : with 66 rows, presenting the
+    correspondance between the original variable names and the
+    descriptive names chosen for this assignment.
 
 Files provided for this assignment and processed to produce the above files:
 ----------------------------------------------------------------------------
@@ -197,22 +208,3 @@ equivalent.)
 -   ‘train/Inertial Signals/body\_gyro\_x\_train.txt’: The angular
     velocity vector measured by the gyroscope for each window sample.
     The units are radians/second.
-
-License:
-========
-
-Use of this dataset in publications must be acknowledged by referencing
-the following publication \[1\]
-
-\[1\] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and
-Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a
-Multiclass Hardware-Friendly Support Vector Machine. International
-Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz,
-Spain. Dec 2012
-
-This dataset is distributed AS-IS and no responsibility implied or
-explicit can be addressed to the authors or their institutions for its
-use or misuse. Any commercial use is prohibited.
-
-Jorge L. Reyes-Ortiz, Alessandro Ghio, Luca Oneto, Davide Anguita.
-November 2012.
