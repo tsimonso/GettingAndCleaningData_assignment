@@ -159,16 +159,17 @@ Scripts produced for this assignment:
     4.  creates a second, independent data set with the average of each
         variable for each activity and each subject.
 -   ‘reading\_tidydata\_txt.R’ : script to load easily ‘tidydata.txt’ in
-    R (called by ‘README.Rmd’ and ‘Codebook.Rmd’)
+    R (script called by ‘README.Rmd’ and ‘Codebook.Rmd’)
 -   ‘README.Rmd’ : script used to produce this ‘README.md’ document.
 -   ‘Codebook.Rmd’ : script used to produce the ‘Codebook.md’ document.
 
 To allow the scripts to run properly, proceed as described below:
 
-1.  Download the zip file with the original datasets and the four
-    scripts to the working directory
-2.  Run ‘run\_analysis.R’
-3.  Knit the markdown documents, running ‘README.Rmd’ and ‘Codebook.Rmd’
+1.  Download the zip file with the original datasets into the working
+    directory
+2.  Copy the four scripts to the working directory
+3.  Run ‘run\_analysis.R’
+4.  Knit the markdown documents, running ‘README.Rmd’ and ‘Codebook.Rmd’
 
 Files produced or updated for this assignment:
 ----------------------------------------------
@@ -198,11 +199,12 @@ Files provided for this assignment and processed to produce the above files:
 -   ‘test/subject\_test.txt’: Each row identifies the subject in the
     test group who performed the activity for each window sample.
 
-To be complete, the dataset should also include the 3-axial raw signals that were provided but not used for this assignment:
-----------------------------------------------------------------------------------------------------------------------------
+Files containing the 3-axial raw signals
+----------------------------------------
 
-(available for the train and test data. Their descriptions are
-equivalent.)
+(used only by the script in ‘README.Rmd’ to illustrate how the data is
+processed) (available for the train and test data. Their descriptions
+are equivalent.)
 
 -   ‘train/Inertial Signals/total\_acc\_x\_train.txt’: The acceleration
     signal from the smartphone accelerometer X axis in standard gravity
