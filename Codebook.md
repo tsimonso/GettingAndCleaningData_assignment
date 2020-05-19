@@ -163,16 +163,6 @@ Table 2 : Angular movements
 Annex : old and new variable names
 ----------------------------------
 
-    Warning: 66 parsing failures.
-    row               col expected actual                         file
-      1 New variable name 41 chars     40 './beforeAfterVarlabels.txt'
-      2 New variable name 41 chars     40 './beforeAfterVarlabels.txt'
-      3 New variable name 41 chars     40 './beforeAfterVarlabels.txt'
-      4 New variable name 41 chars     40 './beforeAfterVarlabels.txt'
-      5 New variable name 41 chars     40 './beforeAfterVarlabels.txt'
-    ... ................. ........ ...... ............................
-    See problems(...) for more details.
-
                  Old variable name                        New variable name
     1            tBodyAcc-mean()-X                  LinearAccelerationXmean
     2            tBodyAcc-mean()-Y                  LinearAccelerationYmean
