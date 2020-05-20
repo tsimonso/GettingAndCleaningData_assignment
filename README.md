@@ -16,11 +16,12 @@ Script produced for this assignment:
 ------------------------------------
 
 The file ‘run\_analysis.R’ is a script that perform the following tasks:
-1) merges the training and the test sets to create one data set 2)
-extracts the mean and standard deviation for each measurement. 3) labels
-the variables and the values of the categorical variables. 4) creates a
-second, independent data set with the average of each variable for each
-activity and each subject.
+
+1.  merges the training and the test sets to create one data set
+2.  extracts the mean and standard deviation for each measurement.
+3.  labels the variables and the values of the categorical variables.
+4.  creates a second, independent data set with the average of each
+    variable for each activity and each subject.
 
 To allow the script to run properly, follow the steps below:
 
