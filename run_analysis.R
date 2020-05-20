@@ -15,7 +15,6 @@ rm(p)
 ## Downloading the data
 ## --------------------
 url<-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-if(!file.exists("./data")){dir.create("./data")}
 download(url, dest="./assignmentDataset.zip", mode="wb")
 unzip("./assignmentDataset.zip", exdir = ".")
 
@@ -132,9 +131,7 @@ testdf<-cbind.data.frame(subject_test,group,y_test,X_test)              # There 
 ##-----------------------------------------------------
 ## Appending, exporting and cleaning up the environment
 ##-----------------------------------------------------
-# tidydata_preparatory<-as.data.frame(bind_rows(traindf,testdf)) 
 tidydata_preparatory<-bind_rows(traindf,testdf)                                     # Appending the "test" data under the "train" data
-# Appending the "test" data under the "train" data
 tidydata_preparatory$group<-factor(tidydata_preparatory$group,order = TRUE, levels =c("train","test"))
 rm(subject_test,subject_train,testdf,traindf,X_test,X_train,y_test,y_train)             # Removing unnecessary objects from the work environment
 rm(group,varpos,varstart,varend,varlabels, originalvarlabels)
